@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class PrimeNumbers {
@@ -8,7 +7,7 @@ public class PrimeNumbers {
 		// TODO Auto-generated method stub
 
 		 Scanner s= new Scanner (System.in);
-	     int R1=s.nextInt(),R2=s.nextInt(),j,flag=1;
+	     int R1=s.nextInt(),R2=s.nextInt(),j,flag=1,cont=0;
 	     for(int i=R1;i<=R2;i++)
 	     {
 	    	 flag=1;
@@ -26,12 +25,12 @@ public class PrimeNumbers {
 	    	 
 	    	 if(flag!=0)
 	    	 {
-	    		 System.out.println(i);
+	    		 cont++;
 	    	 }
 	    	 
 	     }
 	     
-		
+	     System.out.println(cont);
 		s.close();
 	}
 
